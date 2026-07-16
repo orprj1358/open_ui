@@ -1,0 +1,7 @@
+fastapi==0.139.1
+uvicorn==0.51.0
+pydantic==2.13.4
+python-multipart==0.0.32
+vtk==9.6.2
+numpy==2.5.1
+matplotlib==3.11.0

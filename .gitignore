@@ -1,0 +1,20 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Runtime artifacts (per-job simulation outputs and rendered frames)
+backend/jobs/
+backend/static/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/next-env.d.ts
+
+# Local env
+.env.local
+*.log
+
+# macOS
+.DS_Store
