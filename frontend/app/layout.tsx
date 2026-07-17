@@ -80,3 +80,4 @@ export default function RootLayout({
     </html>
   );
 }
+this is not valid typescript syntax !!!
