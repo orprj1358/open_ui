@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import packageJson from "../package.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,14 +62,19 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t border-zinc-800 py-6 text-center text-xs text-zinc-500">
-          Powered by{" "}
-          <a
-            href="https://www.openlb.net"
-            className="underline hover:text-zinc-300"
-          >
-            OpenLB
-          </a>{" "}
-          (GPL v2) — 데모 프로토타입 · 로컬 실행 환경
+          <p>
+            Powered by{" "}
+            <a
+              href="https://www.openlb.net"
+              className="underline hover:text-zinc-300"
+            >
+              OpenLB
+            </a>{" "}
+            (GPL v2) — 데모 프로토타입 · 로컬 실행 환경
+          </p>
+          <p className="mt-1">
+            OpenLB Cloud v{packageJson.version}
+          </p>
         </footer>
       </body>
     </html>
